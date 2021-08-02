@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/w3.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<head>
+		<title>WNCR 102.7</title>
+	</head>
+	
+	<body onload="initialize()">
+
+		<div style='margin-top: 38px;'></div>
+		
+		<!-- Navigation Bar -->
+		<nav class="w3-bar w3-black navbar">
+			<a class="w3-button w3-bar-item w3-hover-black w3-hide-large w3-right w3-opacity-mid" href="javascript:void(0);" onclick="toggleFunction()" title="Menu">
+				<i class="fa fa-bars"></i>
+			</a>
+			<a class="w3-button"><img src="images/WNCR102.7LogoWideWhiteTransparent.png" style="width:auto;height:25px;"></a>			
+			<a href="news" class="w3-button w3-bar-item w3-hide-small w3-hide-medium">News</a>
+			<a href="weather" class="w3-button w3-bar-item w3-hide-small w3-hide-medium">Weather</a>
+			<a href="community" class="w3-button w3-bar-item w3-hide-small w3-hide-medium">Community</a>
+			<a href="https://statecollegeconelrad.us.to" class="w3-button w3-bar-item w3-hide-small w3-hide-medium w3-right">State College CONELRAD</a>
+		</nav>
+		<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large navbar mobilenavbar">
+			<a href="news" class="w3-bar-item w3-button" onclick="toggleFunction()">News</a>
+			<a href="weather" class="w3-bar-item w3-button" onclick="toggleFunction()">Weather</a>
+			<a href="community" class="w3-bar-item w3-button" onclick="toggleFunction()">Community</a>
+			<a href="https://statecollegeconelrad.us.to" class="w3-bar-item w3-button" onclick="toggleFunction()">State College CONELRAD</a>
+		</div>
+
+		<!-- Logo/Player -->
+		<div class="w3-container w3-center non-sidebar">
+			<div class="w3-container w3-center w3-padding-16">
+				<img src="images/WNCR102.7LogoWideWhiteTransparent.png" class="wncr-logo">
+			</div>
+			<audio controls="" autoplay="" name="media"><source src="https://statecollegeconelrad.us.to:8443/WNCR" type="audio/mpeg"></audio>
+			<hr class="hr-margin">
+		</div>
+
+		<!-- Newly Added Songs -->
+		<section class="w3-container w3-center non-sidebar">
+			<h2 class="w3-wide">Our Newly Added Song</h2>
+			<p><i>to be added soon...
+				</i></p>
+			<hr class="hr-margin">
+		</section>
+
+		<!-- About Us -->
+		<section class="w3-container w3-center non-sidebar">
+			<h2 class="w3-wide">About Us</h2>
+			<p>WNCR 102.7 is a Rock and Metal formatted station broadcasting from Chambersburg, PA and serving South Central PA, Western MD, Eastern Panhandle WV, and Northern VA.
+				</p>
+			<hr class="hr-margin">
+		</section>
+
+		<!-- Sidebar -->
+		<div class="right-sidebar w3-hide-small">
+			<div style='margin-top: 50px;'></div>
+			<div id="cont_ea6bee7cf4d62a7a1621d2da2b715a40"><script type="text/javascript" async src="https://www.theweather.com/wid_loader/ea6bee7cf4d62a7a1621d2da2b715a40"></script></div>
+		</div>
+
+		<!-- Small Weather -->
+		<div class="w3-hide-large w3-hide-medium small-weatherbar" id="cont_7c940026a03acaf5ddc8dce2213ba68c"><script type="text/javascript" async src="https://www.theweather.com/wid_loader/7c940026a03acaf5ddc8dce2213ba68c"></script></div>
+
+		<script>
+			// Used to toggle the menu on small screens when clicking on the menu button
+			function toggleFunction() {
+				var x = document.getElementById("navDemo");
+				if (x.className.indexOf("w3-show") == -1) {
+					x.className += " w3-show";
+				} else {
+					x.className = x.className.replace(" w3-show", "");
+				}
+			}
+		</script>
+
+		<!-- Footer -->
+		<footer class="w3-container w3-padding-32 w3-center w3-black w3-xlarge">
+			<img src="images/WNCR102.7LogoWideWhiteTransparent.png" style="width:auto;height:50px;display:inline-block;" class="w3-hide-small">
+			<div class="vl w3-hide-small"></div>
+			<p style="display: inline-block;" class="w3-medium">(C) State College CONELRAD <script>document.write( new Date().getFullYear() );</script></p>
+		</footer>
+	</body>
+</html>
+

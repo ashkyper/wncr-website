@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/navbar.css">
+	<link rel="stylesheet" type="text/css" href="css/slideshow.css">
+	
+	<head>
+		<title>State College CONELRAD</title>
+	</head>
+	
+	<body>
+		
+		<!-- Navigation Bar -->
+		<nav class="w3-bar w3-black navbar w3-container">
+			<a href="home.html" class="w3-button w3-bar-item">Home</a>
+			<a href="weather.html" class="w3-button w3-bar-item">Weather</a>
+			<a href="https://www.youtube.com/StateCollegeCONELRAD" class="w3-button w3-bar-item">Youtube</a>
+			<a href="https://www.twitch.tv/log1x_" class="w3-button w3-bar-item">Twitch</a>
+			<a href="radio.html" class="w3-button w3-bar-item">Radio</a>
+			<a href="contact.php" class="w3-button w3-bar-item">Contact</a>
+		</nav>
+		
+		<h1 class="w3-container w3-center w3-padding-32 error-text">OOPS!</h1>
+		<h1 class="w3-container w3-center">404 Error!</h1>
+		<p class="w3-center">What does 404 mean? 404 is an error message displayed by a browser indicating that an Internet address cannot be found. </p>
+		
+		<div class="w3-container w3-center w3-padding-32">
+			<button onclick="goBack()" class="w3-button">Go Back</button>
+		</div>
+
+		<script>
+			function goBack() {
+				window.history.back();
+			}
+		</script>
+		
+		<!-- Footer -->
+		<footer class="w3-container w3-padding-32 w3-center w3-black w3-xlarge">
+			<a href="#"><i class="fa fa-facebook-official"></i></a>
+			<a href="#"><i class="fa fa-pinterest-p"></i></a>
+			<a href="#"><i class="fa fa-twitter"></i></a>
+			<a href="#"><i class="fa fa-flickr"></i></a>
+			<a href="#"><i class="fa fa-linkedin"></i></a>
+			<p class="w3-medium">
+				Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>. Weather Alerts provided by <a href="https://www.willyweather.com" target="_blank">WillyWeather</a>.
+			</p>
+			<p class="w3-medium">(C) State College CONELRAD <script>document.write( new Date().getFullYear() );</script>. Thanks for viewing my site!</p>
+		</footer>
+		
+	</body>
+</html>
+

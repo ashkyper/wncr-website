@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../css/w3.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<script src="https://cdnres.willyweather.com/widget/warning/loadView.html?id=121145" type="application/javascript"></script>
+		
+	<head>
+		<title>WNCR 102.7</title>
+	</head>
+	
+	<body>
+		
+		<!-- Navigation Bar -->
+		<nav class="w3-bar w3-black navbar">
+			<a class="w3-button w3-bar-item w3-hover-black w3-hide-large w3-right w3-opacity-mid" href="javascript:void(0);" onclick="toggleFunction()" title="Menu">
+				<i class="fa fa-bars"></i>
+			</a>
+			<a href=".." class="w3-button"><img src="../images/WNCR102.7LogoWideWhiteTransparent.png" style="width:auto;height:25px;"></a>			
+			<a href="../news" class="w3-button w3-bar-item w3-hide-small w3-hide-medium">News</a>
+			<a class="w3-button w3-bar-item w3-hide-small w3-hide-medium">Weather</a>
+			<a href="../community" class="w3-button w3-bar-item w3-hide-small w3-hide-medium">Community</a>
+			<a href="https://statecollegeconelrad.us.to" class="w3-button w3-bar-item w3-hide-small w3-hide-medium w3-right">State College CONELRAD</a>
+		</nav>
+		<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium navbar mobilenavbar">
+			<a href="../news" class="w3-bar-item w3-button" onclick="toggleFunction()">News</a>
+			<a href="../weather" class="w3-bar-item w3-button" onclick="toggleFunction()">Weather</a>
+			<a href="../community" class="w3-bar-item w3-button" onclick="toggleFunction()">Community</a>
+			<a href="https://statecollegeconelrad.us.to" class="w3-bar-item w3-button" onclick="toggleFunction()">State College CONELRAD</a>
+		</div>
+		
+		<div class="w3-center w3-containter weathercenter" style="max-width: 700px;width: 95vw;margin-top: 45px;">
+			<iframe style="display: block;" src="https://cdnres.willyweather.com/widget/loadView.html?id=132915" width="700" height="520" frameborder="0" scrolling="no"></iframe><a style="text-indent: -9999em;height: 20px;z-index: 1;margin: -20px 0 0 0;position: relative;display: block" href="https://www.willyweather.com/pa/centre-county/state-college.html" rel="nofollow">https://www.willyweather.com/pa/centre-county/state-college.html</a>
+			<hr class="hr-margin">
+		</div>
+
+		<div class="w3-container w3-center" style="margin-bottom: 20px;">
+			<h2 class="w3-wide">Current Radar</h2>
+			<img src="https://radblast.wunderground.com/cgi-bin/radar/WUNIDS_map?station=CCX&amp;brand=wui&amp;num=10&amp;delay=15&amp;type=N0R&amp;frame=0&amp;scale=1&amp;noclutter=1&amp;showstorms=5&amp;mapx=400&amp;mapy=240&amp;centerx=400&amp;centery=240&amp;transx=0&amp;transy=0&amp;showlabels=1&amp;severe=0&amp;rainsnow=1&amp;lightning=1&amp;smooth=1&amp;rand=25026441&amp;lat=0&amp;lon=0&amp;label=you">
+		</div>
+
+		<script>
+			// Used to toggle the menu on small screens when clicking on the menu button
+			function toggleFunction() {
+				var x = document.getElementById("navDemo");
+				if (x.className.indexOf("w3-show") == -1) {
+					x.className += " w3-show";
+				} else {
+					x.className = x.className.replace(" w3-show", "");
+				}
+			}
+		</script>
+		
+		<!-- Footer -->
+		<footer class="w3-container w3-padding-32 w3-center w3-black w3-xlarge">
+			<img src="../images/WNCR102.7LogoWideWhiteTransparent.png" style="width:auto;height:50px;display:inline-block;" class="w3-hide-small">
+			<div class="vl w3-hide-small"></div>
+			<p style="display: inline-block;" class="w3-medium">(C) State College CONELRAD <script>document.write( new Date().getFullYear() );</script></p>
+		</footer>
+	</body>
+</html>
+
